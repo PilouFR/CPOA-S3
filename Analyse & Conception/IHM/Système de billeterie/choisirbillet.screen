@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:ButtonBar" id="1" x="184" y="472" text="Billet\nGrand Public\nPrix normal, Billet\nPromo, Billets\nLicensiés, Billet\nJournée de la\nSolidarité, Billet\n&quot;the Big Match&quot;" measuredWidth="411" measuredHeight="57" selection="4">
+    <font/>
+    <items x="0" y="0" width="90" height="57" text="Billet\nGrand Public\nPrix normal"/>
+    <items x="90" y="0" width="57" height="57" text="Billet\nPromo"/>
+    <items x="147" y="0" width="68" height="57" text="Billets\nLicensiés"/>
+    <items x="215" y="0" width="90" height="57" text="Billet\nJournée de la\nSolidarité"/>
+    <items x="305" y="0" width="106" height="57" text="Billet\n&quot;the Big Match&quot;"/>
+  </widgets>
+  <widgets xsi:type="model:Browser" id="2" x="20" y="11" width="735" height="559" text="Browser&#xA;http://gptl.fr/choixbillet.php" measuredWidth="735" measuredHeight="559">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="3" x="20" y="62" width="735" height="43" measuredWidth="735" measuredHeight="43" background="#f3f3f3"/>
+  <widgets xsi:type="model:Button" id="4" x="648" y="72" width="97" height="23" text="Se déconnecter" measuredWidth="97" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="5" x="32" y="66" text="Grand Prix de Tennis de Lyon" measuredWidth="255" measuredHeight="36">
+    <font size="20px" bold="false" italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="6" x="584" y="72" text="S'inscrire" measuredWidth="53" measuredHeight="23">
+    <font underline="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="7" x="277" y="144" text="5. Choisir billet" measuredWidth="217" measuredHeight="53">
+    <font size="32px"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="8" x="641" y="504" width="75" height="33" text="Confirmer" measuredWidth="75" measuredHeight="33">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="9" x="552" y="504" width="75" height="33" text="Précédent" measuredWidth="75" measuredHeight="33">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="11" x="104" y="224" width="273" height="59" text="Joueur 5 / Joueur 6&#xA;Dimanche 31 - 8h&#xA;Cours Phillipe Chatrier - Tribune A" measuredWidth="273" measuredHeight="59">
+    <font size="13px"/>
+  </widgets>
+  <widgets xsi:type="model:List" id="15" x="120" y="304" text="(o) Billet normal 15€&#xA;( ) Billet promotionnel 10€ - Entrez votre code promotionnel :&#xA;( ) Billet licencié Tennis 12€ - Entrez votre numéro licencié :&#xA;( ) Billet &quot;Journée de la Solidarité&quot; 12€ - Entrez votre code JdlS :" measuredWidth="342" measuredHeight="144" border="false" alpha="0" rowHeight="35">
+    <font/>
+    <items x="0" y="2" width="342" height="35" text="(o) Billet normal 15€"/>
+    <items x="0" y="37" width="342" height="35" text="( ) Billet promotionnel 10€ - Entrez votre code promotionnel :"/>
+    <items x="0" y="72" width="342" height="35" text="( ) Billet licencié Tennis 12€ - Entrez votre numéro licencié :"/>
+    <items x="0" y="107" width="342" height="35" text="( ) Billet &quot;Journée de la Solidarité&quot; 12€ - Entrez votre code JdlS :"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="16" x="502" y="344" width="142" text="Code promotionnel" measuredWidth="142" measuredHeight="23" borderColor="#999999">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="17" x="502" y="381" width="142" text="Numéro de licencié" measuredWidth="142" measuredHeight="23" borderColor="#999999">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="18" x="502" y="416" width="142" text="Code JdlS" measuredWidth="142" measuredHeight="23" borderColor="#999999">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

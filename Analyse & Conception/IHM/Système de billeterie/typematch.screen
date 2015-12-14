@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="20" y="16" width="735" height="559" text="Browser&#xA;http://gptl.fr/typedematch.php" measuredWidth="735" measuredHeight="559">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="2" x="20" y="62" width="735" height="43" measuredWidth="735" measuredHeight="43" background="#f3f3f3"/>
+  <widgets xsi:type="model:Button" id="3" x="648" y="72" width="77" height="23" text="S'identifier" measuredWidth="77" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="4" x="32" y="66" text="Grand Prix de Tennis de Lyon" measuredWidth="255" measuredHeight="36">
+    <font size="20px" bold="false" italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="5" x="584" y="72" text="S'inscrire" measuredWidth="53" measuredHeight="23">
+    <font underline="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="12" x="200" y="200" text="1. Type de match souhaité" measuredWidth="377" measuredHeight="53">
+    <font size="32px"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="13" x="400" y="280" width="124" height="57" text="Double" measuredWidth="124" measuredHeight="57" background="#f3f3f3">
+    <font size="18px"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="14" x="264" y="280" width="124" height="57" text="Simple" measuredWidth="124" measuredHeight="57" background="#d9d2e9">
+    <font size="18px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="15" x="641" y="504" width="75" height="33" text="Suivant" measuredWidth="75" measuredHeight="33">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

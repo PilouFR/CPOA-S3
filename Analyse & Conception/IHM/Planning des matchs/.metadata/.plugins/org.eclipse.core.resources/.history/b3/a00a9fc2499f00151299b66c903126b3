@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="16" x="10" y="10" width="638" height="478" text="Browser&#xA;http://gptl.fr/auth.php" measuredWidth="638" measuredHeight="478">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="19" x="200" y="131" width="280" height="214" measuredWidth="280" measuredHeight="214">
+    <screen xsi:type="model:Screen" href="assets/Bootstrap/Templates/Signin.screen#/"/>
+    <overrides>
+      <widgets ref="1" x="-218" y="-119"/>
+      <widgets ref="2" x="-218" y="-71" width="280"/>
+      <widgets ref="2/1" width="280" text="Adresse mail"/>
+      <widgets ref="3" x="-218" y="-34" width="280"/>
+      <widgets ref="3/1" width="280" text="Mot de passe"/>
+      <widgets ref="4" x="-218" y="9"/>
+      <widgets ref="5" x="-218" y="50" width="280"/>
+      <widgets ref="5/47" width="280" text="Valider">
+        <attributes key="background" value="#cccccc"/>
+      </widgets>
+      <widgets ref="2/13" x="-213" y="-119"/>
+      <widgets ref="5/46" x="-213" y="216"/>
+      <widgets ref="3/13" x="-213" y="-119"/>
+      <widgets ref="1/5" text="Authentification"/>
+      <widgets ref="4/18" text="Se souvenir de moi"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="14px"/>
+</model:Screen>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:ButtonBar" id="3" x="184" y="472" text="Billet\nGrand Public\nPrix normal, Billet\nPromo, Billets\nLicensiés, Billet\nJournée de la\nSolidarité, Billet\n&quot;the Big Match&quot;" measuredWidth="411" measuredHeight="57" selection="4">
+    <font/>
+    <items x="0" y="0" width="90" height="57" text="Billet\nGrand Public\nPrix normal"/>
+    <items x="90" y="0" width="57" height="57" text="Billet\nPromo"/>
+    <items x="147" y="0" width="68" height="57" text="Billets\nLicensiés"/>
+    <items x="215" y="0" width="90" height="57" text="Billet\nJournée de la\nSolidarité"/>
+    <items x="305" y="0" width="106" height="57" text="Billet\n&quot;the Big Match&quot;"/>
+  </widgets>
+  <widgets xsi:type="model:Browser" id="4" x="20" y="11" width="735" height="559" text="Browser&#xA;http://gptl.fr/choisirbillet.php" measuredWidth="735" measuredHeight="559">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="5" x="20" y="62" width="735" height="43" measuredWidth="735" measuredHeight="43" background="#f3f3f3"/>
+  <widgets xsi:type="model:Button" id="6" x="648" y="72" width="97" height="23" text="Se déconnecter" measuredWidth="97" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="7" x="32" y="66" text="Grand Prix de Tennis de Lyon" measuredWidth="255" measuredHeight="36">
+    <font size="20px" bold="false" italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="584" y="72" text="S'inscrire" measuredWidth="53" measuredHeight="23">
+    <font underline="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="9" x="268" y="144" text="5. Choisir billet" measuredWidth="217" measuredHeight="53">
+    <font size="32px"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="15" x="641" y="504" width="75" height="33" text="Suivant" measuredWidth="75" measuredHeight="33">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="16" x="552" y="504" width="75" height="33" text="Précédent" measuredWidth="75" measuredHeight="33">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="28" x="113" y="335" measuredWidth="477" measuredHeight="144">
+    <widgets xsi:type="model:List" id="18" text="(o) Billet grand public. Prix : 15€&#xA;( ) Billet promotionnel. Prix :10€ Entrez le code promotionnel&#xA;( ) Billet licensié. Prix : 12€ Entrez votre numéro de licensié &#xA;( ) Billet Journée de la Solidarité Prix 12€" measuredWidth="333" measuredHeight="144" border="false" alpha="0" rowHeight="35">
+      <font/>
+      <items x="0" y="2" width="333" height="35" text="(o) Billet grand public. Prix : 15€"/>
+      <items x="0" y="37" width="333" height="35" text="( ) Billet promotionnel. Prix :10€ Entrez le code promotionnel"/>
+      <items x="0" y="72" width="333" height="35" text="( ) Billet licensié. Prix : 12€ Entrez votre numéro de licensié "/>
+      <items x="0" y="107" width="333" height="35" text="( ) Billet Journée de la Solidarité Prix 12€"/>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="19" x="368" y="42" width="109" measuredWidth="109" measuredHeight="23" borderColor="#999999">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="22" x="368" y="80" width="109" measuredWidth="109" measuredHeight="23" borderColor="#999999">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:TextField" id="23" x="368" y="116" width="109" measuredWidth="109" measuredHeight="23" borderColor="#999999">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Label" id="25" x="100" y="211" text="Informations match" measuredWidth="224" measuredHeight="43">
+    <font size="25px"/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="27" x="96" y="256" width="273" height="83" text="Joueur 5 / Joueur 6&#xA;Dimanche 31 - 8h&#xA;Cours Phillipe Chatrier - Tribune A" measuredWidth="273" measuredHeight="83">
+    <font size="13px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

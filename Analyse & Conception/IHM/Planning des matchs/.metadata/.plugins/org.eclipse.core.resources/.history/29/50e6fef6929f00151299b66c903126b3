@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="20" y="10" width="735" height="559" text="Browser&#xA;http://gptl.fr/accueil.php" measuredWidth="735" measuredHeight="559">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="3" x="20" y="62" width="735" height="43" measuredWidth="735" measuredHeight="43" background="#f3f3f3"/>
+  <widgets xsi:type="model:Button" id="4" x="648" y="72" width="77" height="23" text="S'identifier" measuredWidth="77" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="5" x="32" y="66" text="Grand Prix de Tennis de Lyon" measuredWidth="255" measuredHeight="36">
+    <font size="20px" bold="false" italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="6" x="584" y="72" text="S'inscrire" measuredWidth="53" measuredHeight="23">
+    <font underline="true"/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="7" x="185" y="230" width="400" height="120" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." measuredWidth="400" measuredHeight="120">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="185" y="152" text="Bienvenue " measuredWidth="212" measuredHeight="67">
+    <font size="43px"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="9" x="296" y="328" width="167" height="112" text="Réservez\n vos places" measuredWidth="167" measuredHeight="112">
+    <font size="24px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

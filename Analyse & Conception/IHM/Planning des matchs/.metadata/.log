@@ -1,0 +1,98 @@
+!SESSION 2015-12-09 14:48:20.489 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\User\Desktop\hubiC\IUT Informatique\CPOA\CPOA-S3\Wireframe\Planning des matchs
+
+!ENTRY com.wireframesketcher.ui 1 0 2015-12-09 14:48:23.141
+!MESSAGE WireframeSketcher v4.5.0 (trial)
+!SESSION 2015-12-10 12:23:16.371 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\User\Desktop\hubiC\IUT Informatique\CPOA\CPOA-S3\Wireframe\Planning des matchs
+
+!ENTRY com.wireframesketcher.ui 1 0 2015-12-10 12:23:20.538
+!MESSAGE WireframeSketcher v4.5.0 (trial)
+
+!ENTRY com.wireframesketcher.ui 4 0 2015-12-10 13:27:41.054
+!MESSAGE [IGNORED] Failed to set selection in tree.
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4422)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Tree.setSelection(Tree.java:4986)
+	at org.eclipse.gef.ui.parts.TreeViewer.showSelectionInTree(TreeViewer.java:238)
+	at org.eclipse.gef.ui.parts.TreeViewer.fireSelectionChanged(TreeViewer.java:172)
+	at com.wireframesketcher.ui.cY.fireSelectionChanged(SourceFile:38)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer$1.run(AbstractEditPartViewer.java:131)
+	at org.eclipse.gef.SelectionManager.fireSelectionChanged(SelectionManager.java:144)
+	at org.eclipse.gef.SelectionManager.deselect(SelectionManager.java:118)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.deselect(AbstractEditPartViewer.java:202)
+	at org.eclipse.gef.editparts.AbstractEditPart.removeNotify(AbstractEditPart.java:942)
+	at org.eclipse.gef.editparts.AbstractEditPart.removeNotify(AbstractEditPart.java:948)
+	at org.eclipse.gef.editparts.AbstractEditPart.removeChild(AbstractEditPart.java:880)
+	at org.eclipse.gef.editparts.RootTreeEditPart.setContents(RootTreeEditPart.java:135)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.setContents(AbstractEditPartViewer.java:617)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.setContents(AbstractEditPartViewer.java:626)
+	at com.wireframesketcher.ui.editors.screen.ai.a(SourceFile:180)
+	at com.wireframesketcher.ui.editors.screen.ScreenEditor.c(SourceFile:1674)
+	at com.wireframesketcher.ui.editors.screen.ScreenEditor.b(SourceFile:1797)
+	at com.wireframesketcher.ui.fg.g(SourceFile:82)
+	at com.wireframesketcher.ui.ff.performRequest(SourceFile:112)
+	at org.eclipse.gef.tools.SelectEditPartTracker.performOpen(SelectEditPartTracker.java:194)
+	at org.eclipse.gef.tools.SelectEditPartTracker.handleDoubleClick(SelectEditPartTracker.java:137)
+	at org.eclipse.gef.tools.AbstractTool.mouseDoubleClick(AbstractTool.java:1069)
+	at org.eclipse.gef.tools.SelectionTool.mouseDoubleClick(SelectionTool.java:527)
+	at org.eclipse.gef.EditDomain.mouseDoubleClick(EditDomain.java:231)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseDoubleClicked(DomainEventDispatcher.java:291)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseDoubleClick(LightweightSystem.java:518)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:196)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at com.wireframesketcher.studio.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY com.wireframesketcher.ui 1 0 2015-12-10 15:32:32.304
+!MESSAGE Transfer: FileTransfer
+
+!ENTRY com.wireframesketcher.ui 1 0 2015-12-10 15:32:32.305
+!MESSAGE URL data: [Ljava.lang.String;@4e651f
+
+!ENTRY com.wireframesketcher.ui 1 0 2015-12-10 15:32:32.306
+!MESSAGE URL url: C:\Users\User\Desktop\hubiC\IUT Informatique\CPOA\Cours_central.png
+
+!ENTRY com.wireframesketcher.ui 1 0 2015-12-10 15:34:16.790
+!MESSAGE Transfer: FileTransfer
+
+!ENTRY com.wireframesketcher.ui 1 0 2015-12-10 15:34:16.791
+!MESSAGE URL data: [Ljava.lang.String;@14203c1
+
+!ENTRY com.wireframesketcher.ui 1 0 2015-12-10 15:34:16.791
+!MESSAGE URL url: C:\Users\User\Desktop\hubiC\IUT Informatique\CPOA\Cours_central.jpg

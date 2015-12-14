@@ -1,2 +1,8 @@
 TODO :
-  - 
+Diagramme de classe
+  - Ajouter clé primaire
+  - Ajouter clé étrangère
+  - Ajouter méthodes
+  - Ajouter commentaires
+Générer table des matières pour le rapport avec Power AMC
+(cf http://liris.cnrs.fr/veronique.deslandres/lib/exe/fetch.php?media=start%3Aens%3Acours7_tutogenerationrapport_pamc.pdf)

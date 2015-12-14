@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:ButtonBar" id="1" x="184" y="472" text="Billet\nGrand Public\nPrix normal, Billet\nPromo, Billets\nLicensiés, Billet\nJournée de la\nSolidarité, Billet\n&quot;the Big Match&quot;" measuredWidth="411" measuredHeight="57" selection="4">
+    <font/>
+    <items x="0" y="0" width="90" height="57" text="Billet\nGrand Public\nPrix normal"/>
+    <items x="90" y="0" width="57" height="57" text="Billet\nPromo"/>
+    <items x="147" y="0" width="68" height="57" text="Billets\nLicensiés"/>
+    <items x="215" y="0" width="90" height="57" text="Billet\nJournée de la\nSolidarité"/>
+    <items x="305" y="0" width="106" height="57" text="Billet\n&quot;the Big Match&quot;"/>
+  </widgets>
+  <widgets xsi:type="model:Browser" id="2" x="20" y="11" width="735" height="559" text="Browser&#xA;http://gptl.fr/paiement.php" measuredWidth="735" measuredHeight="559">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="3" x="20" y="62" width="735" height="43" measuredWidth="735" measuredHeight="43" background="#f3f3f3"/>
+  <widgets xsi:type="model:Button" id="4" x="648" y="72" width="97" height="23" text="Se déconnecter" measuredWidth="97" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="5" x="32" y="66" text="Grand Prix de Tennis de Lyon" measuredWidth="255" measuredHeight="36">
+    <font size="20px" bold="false" italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="6" x="584" y="72" text="S'inscrire" measuredWidth="53" measuredHeight="23">
+    <font underline="true"/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="16" x="145" y="224" text="Le paiement fut un succés.&#xD;&#xA;Vous recevrez par mail votre billet à imprimer.&#xD;&#xA;&#xD;&#xA;Toute l'équipe d'organisation du Grand Prix de Tennis de Lyon &#xD;&#xA;vous remercie et vous souhaite une agréable fin de journée." measuredWidth="492" measuredHeight="125">
+    <font size="18px"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="17" x="145" y="376" text="Cliquez-ici pour revenir à la page d'accueil" measuredWidth="333" measuredHeight="33">
+    <font size="18px"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="10" y="10" width="735" height="559" text="Browser&#xA;http://gptl.fr/choixbillet.php" measuredWidth="735" measuredHeight="559">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:ButtonBar" id="3" x="152" y="272" text="Billet\nGrand Public\nPrix normal, Billet\nPromo, Billets\nLicensiés, Billet\nJournée de la\nSolidarité, Billet\n&quot;the Big Match&quot;" measuredWidth="411" measuredHeight="57" selection="4">
+    <font/>
+    <items x="0" y="0" width="90" height="57" text="Billet\nGrand Public\nPrix normal"/>
+    <items x="90" y="0" width="57" height="57" text="Billet\nPromo"/>
+    <items x="147" y="0" width="68" height="57" text="Billets\nLicensiés"/>
+    <items x="215" y="0" width="90" height="57" text="Billet\nJournée de la\nSolidarité"/>
+    <items x="305" y="0" width="106" height="57" text="Billet\n&quot;the Big Match&quot;"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

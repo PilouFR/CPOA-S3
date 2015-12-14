@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="13" x="20" y="16" width="735" height="617" text="Browser&#xA;http://gptl.fr/choisirplace.php" measuredWidth="735" measuredHeight="617">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="14" x="20" y="62" width="735" height="43" measuredWidth="735" measuredHeight="43" background="#f3f3f3"/>
+  <widgets xsi:type="model:Button" id="15" x="648" y="72" width="77" height="23" text="S'identifier" measuredWidth="77" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="16" x="32" y="66" text="Grand Prix de Tennis de Lyon" measuredWidth="255" measuredHeight="36">
+    <font size="20px" bold="false" italic="false"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="17" x="584" y="72" text="S'inscrire" measuredWidth="53" measuredHeight="23">
+    <font underline="true"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="18" x="200" y="128" text="4. Sélectionnez votre place " measuredWidth="393" measuredHeight="53">
+    <font size="32px"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="19" x="641" y="574" width="75" height="33" text="Suivant" measuredWidth="75" measuredHeight="33">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="20" x="552" y="574" width="75" height="33" text="Précédent" measuredWidth="75" measuredHeight="33">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="21" x="216" y="192" text="Dimanche 31 - 8h - Joueur 5  / Joueur 6" measuredWidth="397" measuredHeight="39">
+    <font size="24px" italic="true" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="62" x="128" y="294" measuredWidth="284" measuredHeight="241">
+    <widgets xsi:type="model:Label" id="60" x="24" y="202" text="Cours Philippe Chatrier" measuredWidth="241" measuredHeight="39">
+      <font size="24px"/>
+    </widgets>
+    <widgets xsi:type="model:Image" id="72" width="284" height="203" measuredWidth="284" measuredHeight="203" src="assets/Cours_central.jpg"/>
+  </widgets>
+  <widgets xsi:type="model:List" id="63" x="504" y="266" height="269" text="(o) A (15 places disponibles) 15€&#xA;() B (26 places disponibles) 12€&#xA;() C (13 places disponibles) 12€&#xA;() D (19 places disponibles) 15€&#xA;() E (5 places disponibles) 19€&#xA;~() F (0 places disponible) 15€~&#xA;() G (7 places disponibles) 12€&#xA;() H (23 places disponibles) 12€&#xA;() I (12 places disponibles) 15€&#xA;() J (3 places disponibles) 15€&#xA;~() K (0 places disponible) 15€~&#xA;() L (23 places disponibles) 19€" measuredWidth="182" measuredHeight="269" border="false" alpha="0">
+    <font/>
+    <items x="0" y="2" width="182" height="22" text="(o) A (15 places disponibles) 15€"/>
+    <items x="0" y="24" width="182" height="22" text="() B (26 places disponibles) 12€"/>
+    <items x="0" y="46" width="182" height="22" text="() C (13 places disponibles) 12€"/>
+    <items x="0" y="68" width="182" height="22" text="() D (19 places disponibles) 15€"/>
+    <items x="0" y="90" width="182" height="22" text="() E (5 places disponibles) 19€"/>
+    <items x="0" y="112" width="182" height="22" text="~() F (0 places disponible) 15€~"/>
+    <items x="0" y="134" width="182" height="22" text="() G (7 places disponibles) 12€"/>
+    <items x="0" y="156" width="182" height="22" text="() H (23 places disponibles) 12€"/>
+    <items x="0" y="178" width="182" height="22" text="() I (12 places disponibles) 15€"/>
+    <items x="0" y="200" width="182" height="22" text="() J (3 places disponibles) 15€"/>
+    <items x="0" y="222" width="182" height="22" text="~() K (0 places disponible) 15€~"/>
+    <items x="0" y="244" width="182" height="22" text="() L (23 places disponibles) 19€"/>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="65" x="-952" y="56" measuredWidth="289" measuredHeight="263">
+    <widgets xsi:type="model:Label" id="66" x="24" y="224" text="Cours Philippe Chatrier" measuredWidth="241" measuredHeight="39">
+      <font size="24px"/>
+    </widgets>
+    <widgets xsi:type="model:Image" id="67" width="289" height="205" measuredWidth="289" measuredHeight="205" src="assets/choisirplace_image.png"/>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="68" x="-944" y="56" measuredWidth="289" measuredHeight="263">
+    <widgets xsi:type="model:Label" id="69" x="24" y="224" text="Cours Philippe Chatrier" measuredWidth="241" measuredHeight="39">
+      <font size="24px"/>
+    </widgets>
+    <widgets xsi:type="model:Image" id="70" width="289" height="205" measuredWidth="289" measuredHeight="205" src="assets/choisirplace_image.png"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
