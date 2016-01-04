@@ -11,16 +11,16 @@ and open the template in the editor.
 /*       MENU
 *********************/
 h1 a{
-  position: relative;
-  text-decoration: none;
-  color: #3F4350;
+    position: relative;
+    text-decoration: none;
+    color: #3F4350;
 }
 
-#login{
-  border: dashed 1px #BBB;
-  border-radius: 7px;
-  padding: 5px 10px 5px 10px;
-  background-color: #FFF;
+#logon{
+    border: solid 1px #BBB;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+    background-color: #FFF;
 }
 
 ul{
@@ -69,10 +69,10 @@ a{
 .button{
     position: relative;
     min-width: 10%;
-        width: 20%;
+    width: 20%;
     border: solid 1px #DDD;
     border-radius: 15px;
-    padding: 20px 20px 20px 20px;
+    padding: 10px 20px 20px 20px;
     text-align: center;
     background-color: #FFF;
 	font-size: 1.2em;
@@ -196,16 +196,27 @@ input[type=radio]{
     left: 14%;
     width: 80%;
 }
-
+#container_liste_match{
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
+    margin-top: 1em;
+    height: 50%;
+    left:22.5%;
+    width:55%;
+    position: absolute;
+}
 .container_info_match{
     margin-top: 1em;
     position: relative;
-    width: 55%;
+    width: 97%;
     border: dashed 1px #707070;
     height: 4em;
-    left: 22.5%;
     background-color: #EFEFEF;
     box-shadow:none;
+}
+.container_info_match:hover{
+    cursor: pointer;
 }
 .container_info_match .hour{
     float: left;
@@ -238,6 +249,50 @@ input[type=radio]{
     top: 1.1em;
     width: 12em;
     font-size: 1.2em;
+}
+#suivant{
+    color: #404040;
+    font-size: 1.3em;
+    border: solid 1px #BBB;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+    background-color: #FFF;
+    position: fixed;
+    right: 10%;
+    top: 85%;
+}
+#authentification{
+    position: relative;
+    margin-top: 3em;
+}
+#authentification input{
+    font-family: 'Didact Gothic','Open Sans Condensed', sans-serif;
+}
+#authentification input[type=text], #authentification input[type=password]{
+    font-size: 0.9em;
+    position: relative;
+    left: 37.5%;
+    width: 32.5%;
+    height: 2.5em;
+    padding-left: 0.7em;
+    border-radius: 0.3em;
+    border: solid 1px #CCC;
+}
+
+#authentification input[type=submit]{
+    color: #444;
+    font-size: 1.2em;
+    position: relative;
+    left: 37.5%;
+    width: 33.5%;
+    height: 2.5em;
+    border-radius: 0.7em;
+    border: solid 1px #DDD;
+    background-color: #FAFAFA;
+    outline: none;
+}
+#authentification p {
+    margin: 1em;
 }
 /*
 #vert{

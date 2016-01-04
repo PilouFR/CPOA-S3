@@ -1,9 +1,9 @@
 $(document).ready(function () {
     window.object = null;
     // Bouton login
-    $('#login').on('mouseenter', function() {
+    $('#logon').on('mouseenter', function() {
         $(this).animate({
-            color: "#666",
+            color: "#000",
             backgroundColor: "#F9F9F9",
             borderColor: "#999"
         }, 200);
@@ -17,15 +17,29 @@ $(document).ready(function () {
     // Bouton Accueil
     $('.button').on('mouseenter', function() {
         $(this).animate({
-            color: "#666",
-            backgroundColor: "#DDD",
+            color: "#222",
+            backgroundColor: "#FCFCFC",
             borderColor: "#AAA"
         }, 200);
         }).on('mouseleave', function(){
         $(this).animate({
-            color: "#707070",
-            backgroundColor: "none",
+            color: "#444",
+            backgroundColor: "#FAFAFA",
             borderColor: "#DDD"
+        }, 250);
+    });
+    // Bouton suivant
+    $('#suivant').on('mouseenter', function() {
+        $(this).animate({
+            color: "#666",
+            backgroundColor: "#F9F9F9",
+            borderColor: "#999"
+        }, 200);
+        }).on('mouseleave', function(){
+        $(this).animate({
+            color: "#404040",
+            backgroundColor: "none",
+            borderColor: "#BBB"
         }, 250);
     });
 
@@ -34,7 +48,7 @@ $(document).ready(function () {
 
         if(object){
             $(object).css("color","#707070").css("background-color","#EFEFEF").css("border-color","#707070").css("box-shadow","none");
-            var randomColorArray = ["#e83e23","#cf341b","#a62510","#963929"];
+            var randomColorArray = ["#e83e23"]; // "#cf341b","#a62510","#963929"
             var randomColor = randomColorArray[Math.floor((Math.random() * (randomColorArray.length-1)) + 0)];
             $(this).animate({
                 color: "#000",
@@ -45,7 +59,7 @@ $(document).ready(function () {
             object = this;
         }else{
             console.log("2eme boucle",object);
-            var randomColorArray = ["#e83e23","#cf341b","#a62510","#963929"];
+            var randomColorArray = ["#e83e23"]; // "#cf341b","#a62510","#963929"
             var randomColor = randomColorArray[Math.floor((Math.random() * (randomColorArray.length-1)) + 0)];
             console.log(randomColor);
             $(this).animate({
