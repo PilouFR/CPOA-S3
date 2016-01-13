@@ -84,7 +84,8 @@ public class PlanningdesMatchs extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ModifierPlanningActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ModifierPlanningActionPerformed
-        // TODO add your handling code here:
+        GestiondesMatchs frame = new GestiondesMatchs();
+        frame.setVisible(true);
     }//GEN-LAST:event_ModifierPlanningActionPerformed
 
     /**

@@ -5,6 +5,11 @@
  */
 package planningdesmatchs;
 
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+    
+    
+
 /**
  *
  * @author alan
@@ -13,11 +18,17 @@ public class Authentification extends javax.swing.JFrame {
 
     /**
      * Creates new form Authentification
+     * @param login
+     * @param password
      */
     public Authentification() {
         initComponents();
+        
     }
-
+    
+    
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -39,11 +50,18 @@ public class Authentification extends javax.swing.JFrame {
 
         Motdepasse.setText("Mot de passe :");
 
-        login.setText("login");
-
-        password.setText("jTextField2");
+        login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginActionPerformed(evt);
+            }
+        });
 
         Connexion.setText("Connexion");
+        Connexion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConnexionActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -83,6 +101,33 @@ public class Authentification extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
+        
+    }//GEN-LAST:event_loginActionPerformed
+
+    private void ConnexionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConnexionActionPerformed
+        if (login.getText().equals("") || password.getText().equals("")){       
+            JOptionPane.showMessageDialog(null, "Veullez remplir tous les champs", "Erreur", JOptionPane.ERROR_MESSAGE);
+        } 
+        
+        else{
+                if(login.getText().equals("joueur") && password.getText().equals("motdepasse")){   
+                    InterfaceJoueur frame = new InterfaceJoueur();
+                    frame.setVisible(true);
+                }
+                else{
+                    if(login.getText().equals("admin") && password.getText().equals("motdepasse")){
+                    PlanningdesMatchs frame = new PlanningdesMatchs();
+                    frame.setVisible(true);
+                    }
+                    else{
+                         JOptionPane.showMessageDialog(null, "Identifiants et mots de passes erronés", "Erreur", JOptionPane.ERROR_MESSAGE);
+                    }
+                    
+                }   
+        }
+    }//GEN-LAST:event_ConnexionActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -116,6 +161,7 @@ public class Authentification extends javax.swing.JFrame {
                 new Authentification().setVisible(true);
             }
         });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
