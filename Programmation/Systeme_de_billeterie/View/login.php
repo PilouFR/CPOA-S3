@@ -14,7 +14,7 @@
             <input type="password" name="pass" id="pass" placeholder="Mot de passe"/>
         </p>
         <p>
-            <input type="submit" value="Se connecter"  class="button"/>
+            <input type="submit" value="Se connecter"  class="button" id="logButton"/>
         </p>
     </form>
 </div>

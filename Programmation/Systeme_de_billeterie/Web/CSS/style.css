@@ -16,7 +16,7 @@ h1 a{
     color: #3F4350;
 }
 
-#logon{
+#register{
     border: solid 1px #BBB;
     border-radius: 7px;
     padding: 5px 10px 5px 10px;
@@ -72,7 +72,7 @@ a{
     width: 20%;
     border: solid 1px #DDD;
     border-radius: 15px;
-    padding: 10px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     text-align: center;
     background-color: #FFF;
 	font-size: 1.2em;
@@ -293,6 +293,14 @@ input[type=radio]{
 }
 #authentification p {
     margin: 1em;
+}
+#logButton{
+    padding: 10px 20px 20px 20px;
+}
+.textalign_center{
+    left: 43%;
+    font-size: 0.9em;
+    width: 20%;
 }
 /*
 #vert{

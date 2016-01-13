@@ -17,7 +17,7 @@
 			<ul>
 				<li><h1><a href="../Controller">Grand Prix de Tennis de Lyon</a></h1></li>
 				<div id="right_nav">
-					<li><a href="#" id="logon">S'inscrire</a></li>
+					<li><a href="index.php?action=<?php echo 'register'; ?>" id="register">S'inscrire</a></li>
 					<li><a href="index.php?action=<?php echo 'login'; ?>">Se connecter</a></li>
 				</div>
 			</ul>
@@ -25,6 +25,6 @@
 		<?php
 			echo $content;
 		?>
-		<footer>All contents of this site, unless otherwise noted, are ©2015 <strong>Alan C. Pierre-Louis D.and Omar L.</strong> All Rights Reserved.</footer>
+		<footer>All contents of this site, unless otherwise noted, are ©2015-2016 <strong>Alan C. Pierre-Louis D.and Omar L.</strong> All Rights Reserved.</footer>
 	</body>
 </html>

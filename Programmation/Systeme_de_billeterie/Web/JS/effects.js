@@ -1,7 +1,7 @@
 $(document).ready(function () {
     window.object = null;
     // Bouton login
-    $('#logon').on('mouseenter', function() {
+    $('#register').on('mouseenter', function() {
         $(this).animate({
             color: "#000",
             backgroundColor: "#F9F9F9",
