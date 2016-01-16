@@ -5,8 +5,30 @@
 
 <a href="#" class="img-shadow"><img src="../Web/Files/images/bordereau.jpg" alt="bordereau" id="bordereau"/></a>
 
+<div id="container_form">
+
+	<?php
+		$msg = '';
+
+		if (isset($_POST['loginMenu']) && !empty($_POST['pseudo'])&& !empty($_POST['pass'])) {
+			echo 'hey';
+			if ($_POST['pseudo'] == 'abc' && $_POST['pass'] == '1234') {
+				$_SESSION['valid'] = true;
+				$_SESSION['timeout'] = time();
+				$_SESSION['username'] = 'abc';
+
+				echo 'You have entered valid use name and password';
+		}else {
+			$msg = 'Identifiants ou mot de passe invalide';
+			}
+		}
+	?>
+
+</div>
+
 <div id="authentification">
-    <form method="post" action="">
+    <form method="post">
+		<p><?php echo $msg; ?></p>
         <p>
             <input type="text" name="pseudo" placeholder="Identifiant ou adresse e-mail"/>
         </p>

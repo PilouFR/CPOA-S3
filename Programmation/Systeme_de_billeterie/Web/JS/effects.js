@@ -24,7 +24,7 @@ $(document).ready(function () {
         }).on('mouseleave', function(){
         $(this).animate({
             color: "#444",
-            backgroundColor: "#FAFAFA",
+            backgroundColor: "#FFF",
             borderColor: "#DDD"
         }, 250);
     });
@@ -58,10 +58,8 @@ $(document).ready(function () {
             $(this).css("box-shadow","0px 0px 10px #631306");
             object = this;
         }else{
-            console.log("2eme boucle",object);
             var randomColorArray = ["#e83e23"]; // "#cf341b","#a62510","#963929"
             var randomColor = randomColorArray[Math.floor((Math.random() * (randomColorArray.length-1)) + 0)];
-            console.log(randomColor);
             $(this).animate({
                 color: "#000",
                 backgroundColor: randomColor,

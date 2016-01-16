@@ -233,7 +233,7 @@ input[type=radio]{
 .container_info_match .joueur1{
     position: absolute;
     float: left;
-    width: 7em;
+    width: 12em;
     margin: 0;
     top: 0.5em;
 }
@@ -241,11 +241,11 @@ input[type=radio]{
     position: absolute;
     float: left;
     top: 2.3em;
-    width: 7em;
+    width: 12em;
 }
 .container_info_match .court{
     position: absolute;
-    left: 12em;
+    left: 16em;
     top: 1.1em;
     width: 12em;
     font-size: 1.2em;

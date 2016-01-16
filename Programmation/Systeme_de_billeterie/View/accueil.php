@@ -4,7 +4,6 @@
 ?>
 
 <a href="#" class="img-shadow"><img src="../Web/Files/images/bordereau.jpg" alt="bordereau" id="bordereau"/></a>
-
 <div>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -25,6 +24,8 @@
 		erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occa
 		ecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</p>
+	<p>
+
 </div>
 
 <div id="container_content">

@@ -12,9 +12,8 @@
 			try {
 				$i = 0;
 				$db = DBConnectionManager::getInstance();
-				$db->getMatchs();
-				while ($data = $db->fetch()) {
-					echo("heyyyyyyyyyyyyyyyyyy");
+				$resultMatch = $db->getMatchs();
+				foreach($resultMatch as $data){
 					$this->_listeMatch[$i]=new Match($data['noMatch'],$data['noCourt'],$data['noCreneau'],$data['phase'],$data['resultat'],$data['noJoueur1'],$data['noJoueur2'],
 													 $data['noJoueur3'],$data['noJoueur4'],$data['type'],$data['nbPlacesRestantes'],$data['date']);
 					$i++;

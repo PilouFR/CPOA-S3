@@ -33,6 +33,11 @@ public class InterfaceJoueur extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         ReserverTerrain.setText("Réserver un terrain d'entraînement");
+        ReserverTerrain.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ReserverTerrainActionPerformed(evt);
+            }
+        });
 
         Deconnexion.setText("Se deconnecter");
 
@@ -59,6 +64,11 @@ public class InterfaceJoueur extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ReserverTerrainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReserverTerrainActionPerformed
+        ReservationTerrain frame = new ReservationTerrain();
+        frame.setVisible(true);
+    }//GEN-LAST:event_ReserverTerrainActionPerformed
 
     /**
      * @param args the command line arguments

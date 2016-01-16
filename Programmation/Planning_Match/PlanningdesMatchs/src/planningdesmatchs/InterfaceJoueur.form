@@ -50,6 +50,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="R&#xe9;server un terrain d&apos;entra&#xee;nement"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ReserverTerrainActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Deconnexion">
       <Properties>

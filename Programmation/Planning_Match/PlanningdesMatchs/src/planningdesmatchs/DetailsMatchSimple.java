@@ -49,9 +49,9 @@ public class DetailsMatchSimple extends javax.swing.JFrame {
 
         DateduMatch.setText("Date du Match :");
 
-        Player1.setText("Binôme 1 :");
+        Player1.setText("Joueur 1 :");
 
-        Player2.setText("Binôme 2 :");
+        Player2.setText("Joueur 2 :");
 
         ArbitreChaise.setText("Arbitre de chaise :");
 
@@ -72,10 +72,6 @@ public class DetailsMatchSimple extends javax.swing.JFrame {
             public Object getElementAt(int i) { return strings[i]; }
         });
         RamasseurBalleList.setViewportView(jList2);
-
-        Joueur1.setText("jTextField1");
-
-        Joueur2.setText("jTextField3");
 
         Modifier.setText("Modifier");
 
@@ -104,9 +100,9 @@ public class DetailsMatchSimple extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(47, 47, 47)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Joueur1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Joueur2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(Joueur2, javax.swing.GroupLayout.DEFAULT_SIZE, 93, Short.MAX_VALUE)
+                                    .addComponent(Joueur1))
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(39, 39, 39)

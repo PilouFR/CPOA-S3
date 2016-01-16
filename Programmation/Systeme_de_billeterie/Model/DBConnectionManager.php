@@ -1,5 +1,6 @@
  <?php
-	//require_once
+	require_once '../Controller/index.php';
+    require_once 'Commande.php';
 
 	class DBConnectionManager {
 
@@ -38,14 +39,72 @@
 		}
 
 		public function getMatchs(){
-			$this->_query=self::$_db->prepare("SELECT * FROM Match ORDER BY noMatch");
-			$this->_query->execute();							// Exécute la requête qui récupère tous les films par ordre alphabétique
+			$this->_query=self::$_db->prepare("SELECT * FROM  `Match` ORDER BY noMatch LIMIT 0 , 15");
+			$this->_query->execute();						// Exécute la requête qui récupère tous les films par ordre alphabétique
+            return $this->_query->fetchAll();
+		}
 
+        public function getListeMatch(){
+			$this->_query=self::$_db->prepare("SELECT `noMatch`
+                                                FROM  `Match`
+                                                WHERE `phase` = `huitieme` AND `type` = `double`
+                                                ORDER BY `date`");
+            //$commande = Commande::getInstance('type','phase',null,null,null,null);
+
+            $this->_query->execute();
+            return $this->_query->fetchAll();
+		}
+
+		public function getJoueurs(){
+			$this->_query=self::$_db->prepare("SELECT * FROM  `Joueur` ORDER BY noJoueur");
+			$this->_query->execute();						// Exécute la requête qui récupère tous les films par ordre alphabétique
+            return $this->_query->fetchAll();
+		}
+
+		public function getNomJoueur1($noMatch){
+			$this->_query=self::$_db->prepare ("SELECT prenomJoueur, nomJoueur, nationalite
+                                                FROM  `Joueur`
+                                                INNER JOIN  `Match` ON  `Joueur`.`noJoueur` =  `Match`.`noJoueur1`
+                                                WHERE noMatch = ?");
+			$this->_query->execute(array($noMatch));						// Exécute la requête qui récupère tous les films par ordre alphabétique
+            while($data = $this->_query->fetch()){
+                echo($data[0] ." ". $data[1] ." (".strtoupper(substr($data[2],0,3)).")");
+            }
+            $this->closeCursor();
+		}
+
+        public function getNomJoueur2($noMatch){
+			$this->_query=self::$_db->prepare ("SELECT prenomJoueur, nomJoueur, nationalite
+                                                FROM  `Joueur`
+                                                INNER JOIN  `Match` ON  `Joueur`.`noJoueur` =  `Match`.`noJoueur2`
+                                                WHERE noMatch = ?");
+			$this->_query->execute(array($noMatch));						// Exécute la requête qui récupère tous les films par ordre alphabétique
+            while($data = $this->_query->fetch()){
+                echo($data[0] ." ". $data[1] ." (".strtoupper(substr($data[2],0,3)).")");
+            }
+            $this->closeCursor();
+		}
+
+        public function getNomCourt($noMatch){
+			$this->_query=self::$_db->prepare ("SELECT nomCourt
+                                                FROM  `Court`
+                                                INNER JOIN  `Match` ON  `Court`.`noCourt` =  `Match`.`noCourt`
+                                                WHERE noMatch = ?");
+			$this->_query->execute(array($noMatch));						// Exécute la requête qui récupère tous les films par ordre alphabétique
+            while($data = $this->_query->fetch()){
+                echo($data[0]);
+            }
+            $this->closeCursor();
 		}
 
 		public function fetch()
 		{
-			return $this->_query->fetch();
+			return $this->_query->fetch(PDO::FETCH_ASSOC);
+		}
+
+        public function fetchAll()
+		{
+			return $this->_query->fetchAll(PDO::FETCH_ASSOC);
 		}
 
 		public function closeCursor()
@@ -53,14 +112,16 @@
 			$this->_query->closeCursor();
 		}
 
-		/*public function afficheNbFilmTrouve() 					// Affiche le nombre de film trouvés dans la base de données
+
+		public function afficheNbMatchTrouve() 					// Affiche le nombre de film trouvés dans la base de données
 		{
-			$query=self::$_db->prepare('SELECT COUNT(id_film) FROM films');
+
+			$query=self::$_db->prepare('SELECT COUNT(noMatch) FROM `Match`');
 			$query->execute();
 			$num=$query->fetch();
-			echo("<p>$num[0] film(s) trouvé(s) dans la base de données.</p>");
+			echo("<p>$num[0] match(s) trouvé(s) dans la base de données.</p>");
 			$query->closeCursor();
-		}*/
+		}
 
 	}
 ?>
