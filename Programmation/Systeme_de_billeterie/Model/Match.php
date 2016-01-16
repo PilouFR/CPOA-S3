@@ -7,7 +7,8 @@
 		private $_noCourt;
 		private $_noCreneau;
         private $_phase;
-        private $_resultat;
+        private $_resultatJ1;
+        private $_resultatJ2;
 		private $_noJoueur1;
 		private $_noJoueur2;
 		private $_noJoueur3;
@@ -15,17 +16,17 @@
         private $_nbPlacesRestantes;
         private $_typeMatch;
 		private $_date;
+		private $_gagnant;
 
 		//_______CONSTRUCTEUR_CLASSE_Match______//
 
-		function __construct($noMatch,$noCourt,$noCreneau,$phase,$resultat,$noJoueur1,$noJoueur2,$noJoueur3,$noJoueur4,$nbPlacesRestantes,$typeMatch,$date)
+		function __construct($noMatch,$noCourt,$noCreneau,$phase,$noJoueur1,$noJoueur2,$noJoueur3,$noJoueur4,$nbPlacesRestantes,$date,$resultatJ1,$resultatJ2,$gagnant,$typeMatch)
 		{
 			try {
 				$this->setNoMatch($noMatch);
 				$this->setNoCourt($noCourt);
 				$this->setNoCreneau($noCreneau);
 				$this->setPhase($phase);
-				$this->setResultat($resultat);
 				$this->setNoJoueur1($noJoueur1);
 				$this->setNoJoueur2($noJoueur2);
 				$this->setNoJoueur3($noJoueur3);
@@ -33,6 +34,9 @@
                 $this->setNbPlacesRestantes($nbPlacesRestantes);
                 $this->setTypeMatch($typeMatch);
                 $this->setDate($date);
+				$this->setResultatJ1($resultatJ1);
+				$this->setResultatJ2($resultatJ2);
+				$this->setGagnant($gagnant);
 			}
 			catch (Exception $e) {
 			   die('Erreur : '.$e->getMessage());
@@ -58,8 +62,12 @@
 			return $this->_phase;
 		}
 
-		public function getResultat() {
-			return $this->_resultat;
+		public function getResultatJ1() {
+			return $this->_resultatJ1;
+		}
+
+		public function getResultatJ2() {
+			return $this->_resultatJ2;
 		}
 
 		public function getNoJoueur1() {
@@ -90,6 +98,10 @@
 			return $this->_date;
 		}
 
+		public function getGagnant() {
+			return $this->_gagnant;
+		}
+
 		//________________SETTER__________________//
 
 		private function setNoMatch($noMatch){
@@ -108,8 +120,11 @@
 			$this->_phase = $phase;
 		}
 
-		public function setResultat($resultat){
-			$this->_resultat = $resultat;
+		public function setResultatJ1($resultatJ1){
+			$this->_resultatJ1 = $resultatJ1;
+		}
+		public function setResultatJ2($resultatJ2){
+			$this->_resultatJ2 = $resultatJ2;
 		}
 		public function setNoJoueur1($noJoueur1){
 			$this->_noJoueur1 = $noJoueur1;
@@ -131,6 +146,9 @@
 		}
 		public function setDate($date){
 			$this->_date = $date;
+		}
+		public function setGagnant($gagnant){
+			$this->_gagnant = $gagnant;
 		}
 	}
 

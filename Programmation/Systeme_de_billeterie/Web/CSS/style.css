@@ -302,6 +302,30 @@ input[type=radio]{
     font-size: 0.9em;
     width: 20%;
 }
+#error_container{
+    position: relative;
+    text-align: center;
+    color: #E33;
+    left: 29%;
+    width: 50%;
+    border-radius: 3px;
+    border: solid 1px #E33;
+    background-color: #FAA;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#good_container{
+    position: relative;
+    text-align: center;
+    color: #3E3;
+    left: 29%;
+    width: 50%;
+    border-radius: 3px;
+    border: solid 1px #3E3;
+    background-color: #AFA;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
 /*
 #vert{
     color: #AAEEAA;
