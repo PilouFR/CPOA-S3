@@ -17,8 +17,17 @@
 			<ul>
 				<li><h1><a href="../Controller">Grand Prix de Tennis de Lyon</a></h1></li>
 				<div id="right_nav">
-					<li><a href="index.php?action=<?php echo 'register'; ?>" id="register">S'inscrire</a></li>
-					<li><a href="index.php?action=<?php echo 'login'; ?>">Se connecter</a></li>
+					<?php
+						$monUrl = substr($_SERVER['REQUEST_URI'],20);
+						if (!isset($_SESSION['id']) AND !isset($_SESSION['prenom']))
+						{
+							echo("<li><a href='index.php?action=register' id='register'>S'inscrire</a></li>");
+						    echo("<li><a href='index.php?action=login'>Se connecter</a></li>");
+						}else{
+							echo("<li id='connection_msg'>".$_SESSION['prenom']."</li>");
+							echo("<li><a href='index.php?action=logout' id='register'>Se déconnecter</a></li>");
+						}
+					?>
 				</div>
 			</ul>
 		</nav>

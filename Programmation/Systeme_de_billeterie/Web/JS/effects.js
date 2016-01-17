@@ -29,7 +29,7 @@ $(document).ready(function () {
         }, 250);
     });
     // Bouton suivant
-    $('#suivant').on('mouseenter', function() {
+    $('#suivant, #precedent').on('mouseenter', function() {
         $(this).animate({
             color: "#666",
             backgroundColor: "#F9F9F9",
@@ -70,4 +70,9 @@ $(document).ready(function () {
         }
 
     });
+
+    $('.button').on('click', function() {
+        $('#gif_container').css("display","inherit");
+    });
+
 });

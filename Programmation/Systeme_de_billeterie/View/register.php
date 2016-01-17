@@ -3,10 +3,12 @@
 	ob_start();
 ?>
 
-<a href="#" class="img-shadow"><img src="../Web/Files/images/bordereau.jpg" alt="bordereau" id="bordereau"/></a>
-
+<a href="#" class="img-shadow"><img src="../Web/Files/images/bordereau3.jpg" alt="bordereau" id="bordereau"/></a>
+<div id="msg_container">
+	<?php echo($errormsg); ?>
+</div>
 <div id="authentification">
-    <form method="post" action="index.php?action=<?php echo 'inscription'; ?>">
+    <form method="post" autocomplete="off" action="index.php?action=<?php echo 'inscription'; ?>">
 		<p>
             <input type="text" name="prenom" placeholder="Prénom *"/>
         </p>
@@ -26,14 +28,12 @@
             <input type="password" name="passConfirm" id="passConfirm" placeholder="Confirmer le mot de passe *"/>
         </p>
         <p>
-            <input type="submit" value="Créer un compte"/>
+            <input type="submit" value="Créer un compte" class="button" id="logButton"/>
         </p>
     </form>
 	<p class="textalign_center">* champs obligatoires</p>
 </div>
-<div id="msg_container">
-	<?php echo($errormsg); ?>
-</div>
+
 
 <?php
 	$content = ob_get_clean();	// Vide le tampon dans la variable content

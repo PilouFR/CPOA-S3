@@ -13,6 +13,7 @@
 		<a href="<?php echo "index.php?action=phase&value=demi" ?>"><div class="button">1/2 de finale</div></a>
 		<a href="<?php echo "index.php?action=phase&value=finale" ?>"><div class="button">Finale</div></a>
 	</div>
+	<div id="gif_container"><img src="../Web/Files/images/ajax-loader.gif"/></div> 
 </div>
 
 <?php

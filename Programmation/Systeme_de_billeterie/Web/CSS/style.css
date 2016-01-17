@@ -53,6 +53,15 @@ nav ul li > a, nav ul li > a:active{
     bottom: 4px;
 }
 
+#connection_msg{
+    color: #404040;
+	text-decoration:none;
+    font-size: 0.6em;
+    font-family: "Arial",sans-serif;
+    position: relative;
+    bottom: 4px;
+}
+
 #right_nav{
     position: absolute;
     right: 10%;
@@ -252,7 +261,7 @@ input[type=radio]{
 }
 #suivant{
     color: #404040;
-    font-size: 1.3em;
+    font-size: 1.2em;
     border: solid 1px #BBB;
     border-radius: 7px;
     padding: 5px 10px 5px 10px;
@@ -260,6 +269,21 @@ input[type=radio]{
     position: fixed;
     right: 10%;
     top: 85%;
+    width: 5.5em;
+    text-align: center;
+}
+#precedent{
+    color: #404040;
+    font-size: 1.2em;
+    border: solid 1px #BBB;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+    background-color: #FFF;
+    position: fixed;
+    left: 10%;
+    top: 85%;
+    width: 5.5em;
+    text-align: center;
 }
 #authentification{
     position: relative;
@@ -297,15 +321,24 @@ input[type=radio]{
 #logButton{
     padding: 10px 20px 20px 20px;
 }
+#logButton:hover{
+    cursor:  pointer;
+}
 .textalign_center{
     left: 43%;
     font-size: 0.9em;
     width: 20%;
 }
+#msg_container{
+    position: relative;
+    top: 1em;
+    height: 2em;
+}
 #error_container{
     position: relative;
     text-align: center;
-    color: #E33;
+    /*color: #E33;*/
+    color: #333;
     left: 29%;
     width: 50%;
     border-radius: 3px;
@@ -317,18 +350,24 @@ input[type=radio]{
 #good_container{
     position: relative;
     text-align: center;
-    color: #3E3;
+    color: #333;
     left: 29%;
     width: 50%;
     border-radius: 3px;
-    border: solid 1px #3E3;
-    background-color: #AFA;
+    border: solid 1px #5D3;
+    background-color: #CFA;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
-/*
-#vert{
-    color: #AAEEAA;
+#pasinscrit{
+    position: relative;
+    text-align: center;
+    font-size: 0.9em;
+    width: 40%;
+    left: 33%;
+}
+#pasinscrit a:hover{
+    color: #EE2222;
 }
 #rouge{
     color: #EE2222;
@@ -345,4 +384,28 @@ table{
   width: 5%;
   position: absolute;
   z-index: 3;
+}
+#infoMatch {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    width: 97%;
+    position: relative;
+    left: 1.8%;
+    /*border: solid 1px #999;
+    border-radius: 5px;
+    /*background-color: #FAFAFA;*/
+}
+#infoMatch h2{
+    color: #555;
+    font-size: 1em;
+}
+
+form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-text-fill-color: #fff !important;
+}
+#gif_container{
+    position: relative;
+    margin-top: 5em;
+    display: none;
 }

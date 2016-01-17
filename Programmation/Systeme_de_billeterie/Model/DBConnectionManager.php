@@ -39,22 +39,20 @@
 		}
 
 
-
-
 		public function getMatchs(){
 			$this->_query=self::$_db->prepare("SELECT * FROM  `Match` ORDER BY noMatch LIMIT 0 , 15");
 			$this->_query->execute();						// Exécute la requête qui récupère tous les films par ordre alphabétique
             return $this->_query->fetchAll();
 		}
 
-        public function getListeMatch(){
-			$this->_query=self::$_db->prepare("SELECT `noMatch`
+        public function getListeMatch($type, $phase){
+			$this->_query=self::$_db->prepare("SELECT *
                                                 FROM  `Match`
-                                                WHERE `phase` = `huitieme` AND `type` = `double`
+                                                WHERE `type` = ? AND `phase` = ?
                                                 ORDER BY `date`");
             //$commande = Commande::getInstance('type','phase',null,null,null,null);
 
-            $this->_query->execute();
+            $this->_query->execute(array($type,$phase));
             return $this->_query->fetchAll();
 		}
 
@@ -71,7 +69,7 @@
                                                 WHERE noMatch = ?");
 			$this->_query->execute(array($noMatch));						// Exécute la requête qui récupère tous les films par ordre alphabétique
             while($data = $this->_query->fetch()){
-                echo($data[0] ." ". $data[1] ." (".strtoupper(substr($data[2],0,3)).")");
+                return $data[0] ." ". $data[1] ." (".strtoupper(substr($data[2],0,3)).")";
             }
             $this->closeCursor();
 		}
@@ -83,7 +81,7 @@
                                                 WHERE noMatch = ?");
 			$this->_query->execute(array($noMatch));						// Exécute la requête qui récupère tous les films par ordre alphabétique
             while($data = $this->_query->fetch()){
-                echo($data[0] ." ". $data[1] ." (".strtoupper(substr($data[2],0,3)).")");
+                return $data[0] ." ". $data[1] ." (".strtoupper(substr($data[2],0,3)).")";
             }
             $this->closeCursor();
 		}
@@ -101,21 +99,42 @@
 		}
 
         public function adresseExist($adresseMail){
-
-            $this->_query=self::$_db->prepare("SELECT CASE WHEN EXISTS(SELECT adresseMail FROM `Utilisateur` WHERE adresseMail = ?)THEN CAST(1 AS BIT)ELSE CAST(0 AS BIT) END;");
+            $this->_query=self::$_db->prepare("SELECT * FROM `Utilisateur` WHERE adresseMail = ?");
 			$this->_query->execute(array($adresseMail));
-
-            return true;
+            return $this->_query->fetchAll();
 		}
 
         public function createUser($nom, $prenom, $email,$pass_hache){
             $this->_query=self::$_db->prepare('INSERT INTO Utilisateur(adresseMail, nom, prenom, password) VALUES(:email,:nom, :prenom, :pass_hache)');
         	$this->_query->execute(array(
-    	    'email' => $nom,
-    		'nom' => $email,
+    	    'email' => $email,
+    		'nom' => $nom,
     		'prenom' => $prenom,
     	    'pass_hache' => $pass_hache));
         }
+
+        public function accountExist($mail, $pass_hache){
+            $this->_query=self::$_db->prepare('SELECT noUtilisateur FROM `Utilisateur` WHERE adresseMail = :mail AND password = :pass');
+            $this->_query->execute(array(
+            'mail' => $mail,
+            'pass' => $pass_hache));
+            while($data = $this->_query->fetch()){
+                return $data[0];
+            }
+            $this->closeCursor();
+        }
+
+        public function getPrenomSession($noUser){
+			$this->_query=self::$_db->prepare ("SELECT prenom
+                                                FROM  `Utilisateur`
+                                                WHERE noUtilisateur = ?");
+			$this->_query->execute(array($noUser));						// Exécute la requête qui récupère tous les films par ordre alphabétique
+            while($data = $this->_query->fetch()){
+                return $data[0];
+            }
+            $this->closeCursor();
+		}
+
 
 		public function fetch()
 		{
